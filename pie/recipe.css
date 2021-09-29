@@ -1,0 +1,105 @@
+/* 
+Bilguun Batnasan
+Following stylesheet contains all the Pie recipe page's style related rules
+*/
+
+body {
+    background-color:white;
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    font-family: Georgia, Garamond, serif;
+    color: #404040;
+    font-size: 11pt;
+}
+.heading {
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    font-size: 18pt;
+}
+.main-heading {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+a, .heading {
+    color: #A4A400;
+}
+.white-space{
+    white-space: pre-line;
+}
+.strike {
+    text-decoration: line-through;
+}
+.comment {
+    font-style: italic;
+    background-color: #FFFFA8;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bold {
+    font-weight: bold;
+}
+.copyright {
+    margin-right: 10px;
+}
+.copyright-col {
+    margin-top: 10px;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+.bullet {
+    background: url('https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif') no-repeat left top;
+    height: 15px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+/* Tooltip related */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
