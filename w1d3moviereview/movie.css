@@ -1,3 +1,9 @@
+/* 
+Bilguun Batnasan
+Following stylesheet contains all the TMNT movie review page's style related rules, using only today's lecture's
+styling techniques such as float, positioning and box model.
+*/
+
 body {
     background-image: url("images/background.png");
     font-size: 8pt;
@@ -39,6 +45,9 @@ body {
 .section-right {
     float: right;
     width: 250px;
+}
+
+.green-bg {
     background-color: #A2B964;
 }
 
@@ -87,8 +96,6 @@ ul {
     float: left;
     width: 47%;
     margin: 2%;
-    /* border: 1px solid black; */
-    /* box-sizing: border-box; */
 }
 
 .last {
@@ -115,7 +122,6 @@ ul {
 
 .page-info {
     clear: right;
-    background-color: #A2B964;
     margin: 0;
     text-align: center;
     padding: 5px;
