@@ -1,0 +1,82 @@
+/* 
+Bilguun Batnasan
+Following stylesheet contains responsive layout using flexbox and grid
+*/
+
+body {
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: 50px, 40px, 200px, 50px;
+}
+
+header {
+    background-color: lightblue;
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: darkslategrey;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-right: 1px solid black;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    background-color: gray;
+    order: 1;
+}
+
+.col2 {
+    background-color: darkgray;
+    order: 2;
+}
+
+.col3 {
+    background-color: lightgray;
+    order: 3;
+}
+
+.col1,
+.col2,
+.col3 {
+    flex: 1;
+    padding: 20px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .col3 {
+        order: 2;
+    }
+
+    .col2 {
+        flex-basis: 100%;
+        order: 3;
+    }
+}

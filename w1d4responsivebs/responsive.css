@@ -1,0 +1,54 @@
+/* 
+Bilguun Batnasan
+Following stylesheet contains responsive layout using boottrap, only for colors and sizing
+*/
+
+body {
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: lightblue;
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: darkslategrey;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: darkslategrey;
+    padding: 0
+}
+
+nav a {
+    border-right: 1px solid black;
+}
+
+.col1 {
+    background-color: gray;
+}
+
+.col2 {
+    background-color: darkgray;
+}
+
+.col3 {
+    background-color: lightgray;
+}
+
+.col1,
+.col2,
+.col3 {
+    padding: 20px;
+    height: 200px;
+}
