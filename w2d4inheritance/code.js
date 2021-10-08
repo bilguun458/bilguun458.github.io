@@ -28,15 +28,12 @@ Array.prototype.bubbleSort = function () {
     return targetArray;
 };
 
-ar = [6, 5, 4, 7, 3];
-console.log(ar.bubbleSort());
-
-//Exercise 3 
+// Teacher inheritance Person
 function Person() {
 }
 
-Person.prototype.setName = function (_name) {
-    this.name = _name;
+Person.prototype.setName = function (name) {
+    this.name = name;
 }
 
 function Teacher() {
@@ -44,10 +41,10 @@ function Teacher() {
 Teacher.prototype = new Person();
 
 Teacher.prototype.teach = function (subject) {
-    console.log(this.name + ' is now teaching ' + subject);
+    return this.name + ' is now teaching ' + subject;
 };
 
-var instructor = new Teacher();
+// var itech = new Teacher();
 
-instructor.setName("Michael");
-instructor.teach("WAP");
+// instructor.setName("Michael");
+// instructor.teach("WAP");

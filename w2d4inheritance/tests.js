@@ -11,15 +11,18 @@ describe("string filter", function () {
 describe("array bubbleSort", function () {
     it("takes a Array object, and returns sorted one",
         function () {
-            assert.equal("nuuglib", reverse("bilguun"));
-            // assert.equal("asdfghjkl", reverse("lkjhgfdsa"));
+            assert.deepEqual([10, 11, 12, 13], [13, 11, 10, 12].bubbleSort());
+            assert.deepEqual([-1, 0, 1, 2, 3, 4, 5], [4, 5, 3, 2, 1, 0, -1].bubbleSort());
         });
 });
 
-// describe("filterLongWords", function () {
-//     it("takes a array of sentences and minimum number of words, and returns array of strings that has more than words of 2nd parameter",
-//         function () {
-//             assert.deepEqual(['aaaa'], filterLongWords(["aa", "aaa", "aaaa", "b", "bb"], 3));
-//             assert.deepEqual(['aaa', 'aaaa'], filterLongWords(["aa", "aaa", "aaaa", "b", "bb"], 2));
-//         });
-// });
+
+let teacher = new Teacher();
+teacher.setName("Bilguun");
+
+describe("Teacher inheritance Person", function () {
+    it(`Takes course name, and returns course with teacher name`,
+        function () {
+            assert.deepEqual("Bilguun is now teaching CS472", teacher.teach("CS472"));
+        });
+});
