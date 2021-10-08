@@ -43,8 +43,3 @@ Teacher.prototype = new Person();
 Teacher.prototype.teach = function (subject) {
     return this.name + ' is now teaching ' + subject;
 };
-
-// var itech = new Teacher();
-
-// instructor.setName("Michael");
-// instructor.teach("WAP");
