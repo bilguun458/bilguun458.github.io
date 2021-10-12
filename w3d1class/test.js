@@ -37,6 +37,11 @@ describe("SavingsAccount class test", function () {
         savingsAccount.addInterest();
         assert.equal(105.5, savingsAccount.getBalance());
     });
+
+    it("checks the endOfMonth method", function () {
+        assert.equal("Interest added SavingsAccount 0001: balance: 111.3025 interest: 5.8025",
+            savingsAccount.endOfMonth());
+    });
 });
 
 describe("CheckingAccount class test", function () {
@@ -66,6 +71,11 @@ describe("CheckingAccount class test", function () {
             "Insufficient funds"
         );
     });
+
+    it("checks the endOfMonth method", function () {
+        assert.equal("Warning, low balance CheckingAccount 0001: balance: -20 overdraft limit: 50",
+            checkingAccount.endOfMonth());
+    });
 });
 
 describe("Bank class test", function () {
@@ -88,5 +98,10 @@ describe("Bank class test", function () {
         bank.closeAccount(3)
         assert.equal("Account 1: balance 0\nSavings Account 2: balance 0\nChecking Account 4: balance 0",
             bank.accountReport());
+    });
+
+    it("checks the endOfMonth method", function () {
+        assert.equal("\nInterest added SavingsAccount 2: balance: 0 interest: 0\n",
+            bank.endOfMonth());
     });
 });

@@ -31,7 +31,7 @@ class CheckingAccount extends Account {
 
     endOfMonth() {
         return this._balance < 0 ?
-            `Warning, low balance CheckingAccount ${this._number}: balance: ${this._balance} overdraft limit: ${this.overdraftLimit}`
+            `Warning, low balance CheckingAccount ${this._number}: balance: ${this._balance} overdraft limit: ${this._overdraftLimit}`
             : "";
     }
 }
