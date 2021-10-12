@@ -1,0 +1,8 @@
+.controls {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
