@@ -10,8 +10,7 @@ const getNumber = (sum) => {
             readline.close();
         } else {
             num = parseInt(num, 10);
-            let _sum = isNaN(num) ? sum : sum + num;
-            getNumber(_sum);
+            getNumber(isNaN(num) ? sum : sum + num);
         }
     });
 };
