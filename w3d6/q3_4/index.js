@@ -5,31 +5,44 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, "view"));
 app.use(express.urlencoded({ extended: false }));
 app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use('/imgs', express.static(path.join(__dirname, 'imgs')));
 
 let products = [
     {
         id: 1,
         name: "Chair",
         price: 100,
-        image: "https://ae01.alicdn.com/kf/HTB16godoYSYBuNjSspfq6AZCpXa6/Popular-Modern-Design-Classic-famous-Plastic-seat-and-Solid-Wooden-Dining-Arm-Chair-Loft-meeting-leisure.jpg"
+        image: "/imgs/chair.webp"
     },
     {
         id: 2,
         name: "Table",
         price: 200,
-        image: "https://st3.depositphotos.com/13194036/16122/i/1600/depositphotos_161222738-stock-photo-chair-with-white-top-and.jpg"
+        image: "/imgs/table.jpeg"
     },
     {
         id: 3,
         name: "Bed",
         price: 300,
-        image: "https://st3.depositphotos.com/13194036/16122/i/1600/depositphotos_161222738-stock-photo-chair-with-white-top-and.jpg"
+        image: "/imgs/bed.jpeg"
     },
     {
         id: 4,
         name: "Sofa",
         price: 900,
-        image: "https://st3.depositphotos.com/13194036/16122/i/1600/depositphotos_161222738-stock-photo-chair-with-white-top-and.jpg"
+        image: "/imgs/bed.jpeg"
+    },
+    {
+        id: 5,
+        name: "Lamp",
+        price: 140,
+        image: "/imgs/lamp.jpeg"
+    },
+    {
+        id: 6,
+        name: "Desk",
+        price: 540,
+        image: "/imgs/desk.jpeg"
     }
 ];
 
