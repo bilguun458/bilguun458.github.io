@@ -64,3 +64,14 @@ a {
 .product-price b {
     margin-left: 5px;
 }
+
+.back-home {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.back-home a {
+    font-size: 20px;
+    font-weight: bold;
+    color: lightcoral;
+}
