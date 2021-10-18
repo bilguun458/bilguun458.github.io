@@ -56,7 +56,6 @@ app.post('/addToCart', (req, res) => {
         shoppingCart[name] = { name: name, price: price, quantity: 1 }
     } else {
         const quantity = shoppingCart[name].quantity
-        const price = shoppingCart[name].price
         shoppingCart[name].quantity = quantity + 1;
         shoppingCart[name].price = (quantity + 1) * price;
     }
