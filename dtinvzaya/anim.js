@@ -172,12 +172,18 @@ const yesBtnCtnr = document.getElementById("yes-btn-ctnr");
      /*Set the status back to off*/
    });
 
-
    $(document).ready(function () {
-    // start audio ...
-    getaudio.load();
-    getaudio.play();
-    yesBtnCtnr.style.visibility='hidden'
+    yesBtnCtnr.style.visibility='hidden';
+    
+    // start audio when input focus ...
+    $("#inputval").focus(function(){
+        getaudio.load();
+        getaudio.play();
+        // window.clearTimeout(mouseovertimer);
+        audiostatus = 'on';
+      });
+
+        
 
     $(document).on('click touchend', '#go-btn', function() {
         var valInput = document.getElementById('inputval').value;
@@ -185,11 +191,6 @@ const yesBtnCtnr = document.getElementById("yes-btn-ctnr");
             const formCtnr = document.getElementById("form-ctnr");
             formCtnr.remove();
 
-            // start audio ...
-            getaudio.load();
-            getaudio.play();
-            // window.clearTimeout(mouseovertimer);
-            audiostatus = 'on';
 
             // start leaf scene ...
             setTimeout(function () {

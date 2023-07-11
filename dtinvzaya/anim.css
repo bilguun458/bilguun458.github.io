@@ -6,7 +6,7 @@ body, html {
     position: absolute;
     bottom: 0;
     left: 222px;
-    padding-bottom: 53px;
+    padding-bottom: 73px;
     width: 94px;
     height: 150px;
     background: url(leaf.png) no-repeat;
@@ -59,7 +59,7 @@ body, html {
       left: 0;
       width: 37px;
       height: 75px;
-      background: url(https://drive.google.com/uc?export=download&id=0B8ggjnchMwxcWTR4dVFTWGRzY1U) no-repeat;
+      background: url(leaf.png) no-repeat;
       background-size: 100%;
       transform-style: preserve-3d;
       backface-visibility: visible;
@@ -96,7 +96,7 @@ body, html {
 
 .word {
     color: white;
-    font: 500 normal 2.5em 'Roboto Times Arial';
+    font: 500 normal 2em 'Roboto, Times, Arial';
     text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
   }
 
