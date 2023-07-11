@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Bilguun Batnasan
+-->
+
+<head>
+	<title>Responsive layout flexbox & grid</title>
+	<meta charset="utf-8" />
+	<link href="anim.css" type="text/css" rel="stylesheet" />
+	<link href="form.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="form-ctnr" class="form-container">
+        <form >
+          <p>Please enter the most beautiful city you have travelled followed by your birthday</p>
+          <input type="text" id="inputval" placeholder="Ex: Austin1020"><br>
+          <input type="button" id="go-btn" value="Go"><br>
+        </form>
+      
+        <div class="drops">
+          <div class="drop drop-1"></div>
+          <div class="drop drop-2"></div>
+          <div class="drop drop-3"></div>
+          <div class="drop drop-4"></div>
+          <div class="drop drop-5"></div>
+        </div>
+      </div>
+      
+    
+    <div id="yes-btn-ctnr" class="form-container">
+        <form >
+            <p>Would you like to go on a date with me?</p>
+            <input type="button" id="yes-btn" value="Yes"><br>
+          </form>
+
+        <div class="drops">
+            <div class="drop drop-1"></div>
+            <div class="drop drop-2"></div>
+            <div class="drop drop-3"></div>
+            <div class="drop drop-4"></div>
+            <div class="drop drop-5"></div>
+        </div>
+    </div>
+
+    <div class="bg_heart"></div>
+
+	<div class="falling-leaves"></div>
+    <div id="hand"></div>
+    <div id="leave"></div>
+    <!-- <div class="speaker"></div> -->
+    <div class="word-wrapper"><div class="word"></div></div>
+    
+
+    <audio id="player">
+        <source src="bgmusic.mp3" type="audio/mp3" />
+        <source src="bgmusic.mp3" type="audio/ogg" />
+    </audio>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="anim.js"></script>
+
+</html>
