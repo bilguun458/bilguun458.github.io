@@ -162,6 +162,7 @@ var LeafScene = function(el) {
   
     //Audio
    var getaudio = $('#player')[0];
+   audiostatus = 'off';
 
 const yesBtnCtnr = document.getElementById("yes-btn-ctnr");
 
@@ -177,10 +178,12 @@ const yesBtnCtnr = document.getElementById("yes-btn-ctnr");
     
     // start audio when input focus ...
     $("#inputval").focus(function(){
-        getaudio.load();
-        getaudio.play();
-        // window.clearTimeout(mouseovertimer);
-        audiostatus = 'on';
+        if (audiostatus != 'on') {
+            getaudio.load();
+            getaudio.play();
+            // window.clearTimeout(mouseovertimer);
+            audiostatus = 'on';
+        }
       });
 
         
@@ -190,7 +193,6 @@ const yesBtnCtnr = document.getElementById("yes-btn-ctnr");
         if (valInput != "" && valInput.toUpperCase() == "CAIRO0301") {
             const formCtnr = document.getElementById("form-ctnr");
             formCtnr.remove();
-
 
             // start leaf scene ...
             setTimeout(function () {
@@ -258,8 +260,8 @@ const yesBtnCtnr = document.getElementById("yes-btn-ctnr");
 
    // Word fade in
 
-   var words = ['Greetings for you to receive this message', 'This message is brought you by Bilguun', 'Thank you for telling me such a private thing happened to your life, even you didn\'t tell to your parents, that means a lot to me', 'Also thank you for being so strong and taking good care of yourself', 
-   'That made me feel so admired and loved for you', 'I am sure you will be getting better soon', 'I also have some exciting news to share with you...', 'I just got my visa approved to visit europe... So', '...'],
+   var words = ['Greetings to a day, when you receive this message', 'This message is sent to you from Bilguun', 'Thank you for telling me such a private thing happened to your life, even you didn\'t tell to your parents ... that means a lot to me', 'Also thank you for being so strong and taking good care of yourself', 
+   'That made me feel so admired and loved for you', 'I am sure you will be getting better soon :)', 'I also have some exciting news to share with you ...', 'I just got my visa approved to visit europe ... So', '...'],
     part,
     i = 0,
     offset = 0,

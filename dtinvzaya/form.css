@@ -6,14 +6,14 @@
     z-index: 200;
 }
 form {
-    background: rgba(250, 95, 85, 0.5);
+    background: rgba(250, 95, 85, 0.7);
     padding: 3em;
     height: 320px;
     border-radius: 20px;
-    border-left: 1px solid rgba(250, 95, 85, 0.5);
-    border-top: 1px solid rgba(250, 95, 85, 0.5);
+    border-left: 1px solid rgba(250, 95, 85, 0.7);
+    border-top: 1px solid rgba(250, 95, 85, 0.7);
     backdrop-filter: blur(10px);
-    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.4);
     text-align: center;
     position: relative;
     transition: all 0.2s ease-in-out;
@@ -25,7 +25,7 @@ form p {
     font-size: 1.4rem;
     margin-top: 0;
     margin-bottom: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 form a {
     text-decoration: none;
@@ -44,24 +44,24 @@ form input {
     padding: 1em;
     margin-bottom: 2em;
     border: none;
-    border-left: 1px solid rgba(250, 95, 85, 0.5);
-    border-top: 1px solid rgba(250, 95, 85, 0.5);
+    border-left: 1px solid rgba(250, 95, 85, 0.7);
+    border-top: 1px solid rgba(250, 95, 85, 0.7);
     border-radius: 5000px;
     backdrop-filter: blur(5px);
-    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.4);
     color: #fff;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 form input:hover {
     background: rgba(250, 95, 85, 0.1);
-    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.4);
 }
 form input[type="email"]:focus, form input[type="password"]:focus {
     background: rgba(250, 95, 85, 0.1);
-    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.4);
 }
 form input[type="button"] {
     margin-top: 10px;
@@ -72,7 +72,7 @@ form input[type="button"]:hover {
     cursor: pointer;
 }
 form input[type="button"]:active {
-    background: rgba(250, 95, 85, 0.2);
+    background: rgba(250, 95, 85, 0.4);
 }
 form:hover {
     margin: 4px;
@@ -84,12 +84,12 @@ form:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .drop {
-    background: rgba(250, 95, 85, 0.5);
+    background: rgba(250, 95, 85, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    border-left: 1px solid rgba(250, 95, 85, 0.5);
-    border-top: 1px solid rgba(250, 95, 85, 0.5);
-    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(250, 95, 85, 0.7);
+    border-top: 1px solid rgba(250, 95, 85, 0.7);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.4);
     position: absolute;
     transition: all 0.2s ease;
 }
