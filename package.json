@@ -2,11 +2,14 @@
   "name": "portfolio-bilguun",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bilguun458.github.io/bilguun458.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -31,6 +34,7 @@
   "devDependencies": {
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.2",
+    "gh-pages": "^6.3.0",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.11"
   }
