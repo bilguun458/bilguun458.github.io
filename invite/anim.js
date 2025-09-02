@@ -260,7 +260,7 @@ const yesBtnCtnr = document.getElementById("yes-btn-ctnr");
 
    // Word fade in
 
-   var words = ['Greetings to a day, when you receive this message', 'This message is sent to you from Bilguun', 'Thank you for telling me such a private thing happened to your life, even you didn\'t tell to your parents ... that means a lot to me', 'Also thank you for being so strong and taking good care of yourself', 
+   var words = ['Greetings to a day, when you receive this message', 'This message is sent to you from Bilguun', 'Thank you for trusting me and sharing such a private thing happened to your life, even you haven\'t tell your parents ... that means a lot to me', 'Also thank you for being so strong and taking good care of yourself', 
    'That made me feel so admired and loved for you', 'I am sure you will be getting better soon :)', 'I also have some exciting news to share with you ...', 'I just got my visa approved to visit europe ... So', '...'],
     part,
     i = 0,
